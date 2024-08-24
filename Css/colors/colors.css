@@ -16,6 +16,8 @@
   --white-color: #fff;
   /* background colors */
   --footer-color:#d6ae69;
+  /* btn text color */
+  --light-btn-color:#607d8b;
 }
 /* 
 navbar link hover are bootstrap :link-warning
