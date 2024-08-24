@@ -1,0 +1,16 @@
+:root{
+/* hover colors */
+--quick-link:#d3ac67;
+/* icon colors */
+--star-color:#fec42d;
+/* bootstrap colors */
+--warning-color:#f58220;
+--danger-color:#d9534f;
+/* text color */
+--red-color:#ff3000;
+}
+/* 
+navbar link hover are bootstrap :link-warning
+slider button color is bootstrap:link-warning
+red text color is bootstrap:text-danger
+ */
