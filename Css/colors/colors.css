@@ -3,8 +3,10 @@
   --quick-link: #d3ac67;
   --red-nav-item: #f23d4a;
   --menu-item-color:#f68121;
+  --red-btn-color:var(--dark-red-color);
   /* icon colors */
   --star-color: #fec42d;
+  --animate-icon-color:#777;
   /* bootstrap colors */
   --warning-color: #f58220;
   --danger-color: #d9534f;
@@ -18,6 +20,7 @@
   --footer-color:#d6ae69;
   /* btn text color */
   --light-btn-color:#607d8b;
+  --blue-btn-color:#38c7dd;
 }
 /* 
 navbar link hover are bootstrap :link-warning
