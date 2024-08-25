@@ -1,0 +1,21 @@
+@import url(../Css/variables.css);
+@import url(../Css/colors/colors.css);
+.nav-link{
+    font-size: var(--fs-sm);
+    font-weight: 500;
+}
+.nav-item:first-child{
+    display: none;
+}
+.nav-item{
+    margin-left: 0.9rem;
+}
+.nav-item:last-of-type .nav-link{
+    color:var(--dark-red-color);
+}
+.nav-item:nth-child(2){
+    margin-left: 8rem;
+}
+.navbar-nav{
+    margin: 0;
+}

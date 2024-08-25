@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+body {
+    direction: rtl; /* Set the text direction to RTL for the entire document */
+    text-align: right; /* Align the content to the right */
+    border: none;
+}
+
+.navbar {
+    direction: rtl; /* Ensures the navbar respects the RTL layout */
+    text-align: right; /* Aligns text within the navbar to the right */
+}
+
+.navbar-nav {
+    float: right; /* Aligns the navbar items to the right */
+    display: inline-block; /* Ensures that the items stay in a row */
+    list-style-type: none;
+}
+
+.navbar-nav > li {
+    float: right; /* Aligns each list item to the right */
+}
+
+.nav-link {
+    text-align: right; /* Aligns the text within each link to the right */
+    display: block; /* Ensures the link is treated as a block-level element */
+}
