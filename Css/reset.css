@@ -11,6 +11,7 @@ body {
     text-align: right; /* Align the content to the right */
     border: none;
     font-family: 'IRANYekan', sans-serif;
+    background-color: var(--body-color);
 }
 
 .navbar {
@@ -41,7 +42,10 @@ input::placeholder{
     box-shadow: none; 
     border-color: var(--border-color); 
 }
-.container{
-    max-width: 1500px;
-    margin: 0 0.9rem;
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
