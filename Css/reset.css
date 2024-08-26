@@ -1,3 +1,5 @@
+@import url(../Css/variables.css);
+@import url(../Css/colors/colors.css);
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +10,7 @@ body {
     direction: rtl; /* Set the text direction to RTL for the entire document */
     text-align: right; /* Align the content to the right */
     border: none;
+    font-family: 'IRANYekan', sans-serif;
 }
 
 .navbar {
@@ -28,4 +31,17 @@ body {
 .nav-link {
     text-align: right; /* Aligns the text within each link to the right */
     display: block; /* Ensures the link is treated as a block-level element */
+}
+input::placeholder{
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    color: var(--grey-color);
+} .form-control:focus{
+    outline: none; 
+    box-shadow: none; 
+    border-color: var(--border-color); 
+}
+.container{
+    max-width: 1500px;
+    margin: 0 0.9rem;
 }

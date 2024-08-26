@@ -7,6 +7,7 @@
   /* icon colors */
   --star-color: #fec42d;
   --animate-icon-color:#777;
+  --shopping-color:#efefef;
   /* bootstrap colors */
   --warning-color: #f58220;
   --danger-color: #d9534f;
@@ -21,6 +22,7 @@
   /* btn text color */
   --light-btn-color:#607d8b;
   --blue-btn-color:#38c7dd;
+  --border-color:#ced4da;
 }
 /* 
 navbar link hover are bootstrap :link-warning

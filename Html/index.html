@@ -10,12 +10,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/iranyekan" rel="stylesheet" />
     <link rel="stylesheet" href="../Css/navbar.css" />
     <link rel="stylesheet" href="../Css/reset.css" />
     <title>Main</title>
   </head>
   <body>
-    <div class="container mx-3 ">
+    <div class="container">
       <header>
         <div class="row">
           <nav class="navbar p-0">
@@ -42,6 +47,44 @@
           </nav>
         </div>
         <div class="row">
+          <div
+            class="col-md-12 col-lg-3 order-sm-1 order-md-1 col-8 d-flex logo justify-content-end justify-content-sm-center"
+          >
+            <img
+              class="img-reponsive logo-img"
+              src="../Images/logo.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-12 col-lg-3 order-sm-2 order-md-3 col-4 align-self-start d-flex align-items-end justify-content-end p-3 flex-column flex-md-row flex-lg-column flex-xl-row user-status"
+          >
+            <div
+              class="shopping-cart order-sm-2 order-md-2 order-lg-1 order-xl-2"
+            >
+              <span class="shopping-info">سبد خرید</span>
+              <span class="shopping-cart-group">
+                <span class="shopping-number icon-circled">0</span>
+                <i class="fas fa-shopping-cart shopping-icon"></i>
+              </span>
+            </div>
+            <button
+              class="p-1 border login order-sm-1 order-md-1 mx-4 order-lg-2 order-xl-1"
+            >
+              ورود به حساب کاربری <i class="fas fa-user-circle"></i>
+            </button>
+          </div>
+          <div class="col-lg-6 col-md-12 order-sm-3 order-md-2 col-8">
+            <div class="search-wrapper">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="کلمه مورد نظر خود را اینجا تایپ کنید"
+                aria-label="Search"
+              />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
         </div>
       </header>
     </div>
@@ -50,5 +93,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../Js/index.js"></script>
   </body>
 </html>
