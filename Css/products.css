@@ -1,0 +1,71 @@
+.left-to-right {
+  position: absolute;
+  left: -1em;
+  background-color: rgba(0, 0, 0, 0.683);
+  padding: 0.5rem;
+  z-index: -1;
+  width: 33px;
+  height:33px;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-icon {
+  top: 25%;
+}
+.second-icon {
+  top: 40%;
+}
+.third-icon {
+  top: 55%;
+}
+.card:hover > .left-to-right {
+  z-index: 1;
+}
+.card:hover > .first-icon {
+  left: 2em;
+  transition: 0.4s ease-in-out;
+}
+.card:hover > .second-icon {
+  left: 2em;
+  transition: 0.55s ease-in-out;
+}
+.card:hover > .third-icon {
+  left: 2em;
+  transition: 0.65s ease-in-out;
+}
+.left-to-right:hover {
+  background-color: rgb(255, 94, 2);
+  transition: 0.5s ease-out;
+}
+.card-footer,
+.card-header {
+  border: 0;
+}
+.card {
+  border-radius: 0;
+  border: 0;
+  border-left:1px solid rgba(204, 204, 204, 0.484);
+
+}
+.products .col-2:first-child .card {
+  border-right: 0;
+}
+.products .col-2:nth-child(6) .card {
+  border-left: 0;
+}
+.products .col-2:nth-child(12) .card {
+  border-left: 0;
+}
+.products .col-2:nth-child(7) .card {
+  border-right: 0;
+}
+.products .col-2:nth-child(n+7):nth-child(-n+12) .card {
+border-top: 1px solid rgba(204, 204, 204, 0.484);
+}
+
+.discount{
+    left: 14px;
+    top: 14px;
+}
