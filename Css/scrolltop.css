@@ -1,0 +1,32 @@
+.scroll-top-btn {
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+    display: none; 
+    width: 40px;
+    height: 40px;
+    background-color: rgba(51, 51, 51, 0.749);
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+    transition:all  0.6s ease;
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--warning-color);
+}
+
+.scroll-top-btn.show {
+    display: block; /* Show the button */
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn.hide {
+    opacity: 0;
+    visibility: hidden;
+}

@@ -33,3 +33,23 @@ document.getElementById('close-chat').addEventListener('click', function() {
     chatBox.style.display = 'none'; // Hide chat box
     chatIcon.style.display = 'block'; // Show chat icon
 });
+// Get the button
+let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        scrollTopBtn.classList.add("show");
+        scrollTopBtn.classList.remove("hide");
+    } else {
+        scrollTopBtn.classList.add("hide");
+        scrollTopBtn.classList.remove("show");
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+scrollTopBtn.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
