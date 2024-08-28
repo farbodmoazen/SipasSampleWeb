@@ -17,3 +17,19 @@ function convertNumbersInElement(element) {
 document.addEventListener('DOMContentLoaded', () => {
     convertNumbersInElement(document.body);
 });
+//chat support
+document.getElementById('chat-icon').addEventListener('click', function() {
+    const chatBox = document.querySelector('.chat-box');
+    const chatIcon = document.querySelector('.chat-icon');
+
+    chatBox.style.display = 'block'; // Show chat box
+    chatIcon.style.display = 'none'; // Hide chat icon
+});
+//close chatbox
+document.getElementById('close-chat').addEventListener('click', function() {
+    const chatBox = document.querySelector('.chat-box');
+    const chatIcon = document.querySelector('.chat-icon');
+
+    chatBox.style.display = 'none'; // Hide chat box
+    chatIcon.style.display = 'block'; // Show chat icon
+});
