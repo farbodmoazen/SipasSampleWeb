@@ -7,31 +7,31 @@
 }
 
 body {
-    direction: rtl; /* Set the text direction to RTL for the entire document */
-    text-align: right; /* Align the content to the right */
+    direction: rtl; 
+    text-align: right; 
     border: none;
     font-family: 'IRANYekan', sans-serif;
     background-color: var(--body-color);
 }
 
 .navbar {
-    direction: rtl; /* Ensures the navbar respects the RTL layout */
-    text-align: right; /* Aligns text within the navbar to the right */
+    direction: rtl; 
+    text-align: right; 
 }
 
 .navbar-nav {
-    float: right; /* Aligns the navbar items to the right */
-    display: inline-block; /* Ensures that the items stay in a row */
+    float: right; 
+    display: inline-block; 
     list-style-type: none;
 }
 
 .navbar-nav > li {
-    float: right; /* Aligns each list item to the right */
+    float: right; 
 }
 
 .nav-link {
-    text-align: right; /* Aligns the text within each link to the right */
-    display: block; /* Ensures the link is treated as a block-level element */
+    text-align: right; 
+    display: block; 
 }
 input::placeholder{
     font-size: var(--fs-sm);
@@ -53,3 +53,7 @@ li{
     max-width: 1280px;
     overflow-x: hidden;
 }
+.nav-link {
+    font-size: var(--fs-sm);
+    font-weight: 500;
+  }

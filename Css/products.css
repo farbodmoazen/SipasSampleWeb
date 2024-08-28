@@ -3,13 +3,13 @@
   left: -1em;
   background-color: rgba(0, 0, 0, 0.683);
   padding: 0.5rem;
-  z-index: -1;
   width: 33px;
   height:33px;
   padding: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 .first-icon {
   top: 25%;
@@ -20,20 +20,23 @@
 .third-icon {
   top: 55%;
 }
-.card:hover > .left-to-right {
-  z-index: 1;
-}
+
 .card:hover > .first-icon {
-  left: 2em;
-  transition: 0.4s ease-in-out;
-}
+left: 2em;
+visibility: visible;
+  transition:all 0.4s ease-out;
+ }
 .card:hover > .second-icon {
   left: 2em;
-  transition: 0.55s ease-in-out;
+  visibility: visible;
+  transition:all 0.55s ease-out;
+;
 }
 .card:hover > .third-icon {
   left: 2em;
-  transition: 0.65s ease-in-out;
+  visibility: visible;
+  transition:all 0.70s ease-out;
+;
 }
 .left-to-right:hover {
   background-color: rgb(255, 94, 2);

@@ -3,15 +3,19 @@
 header{
   padding: 0 15px;
 }
- .nav-link {
-  font-size: var(--fs-sm);
-  font-weight: 500;
+.main-nav .nav-item:first-child .nav-link {
+  border-left: 1px solid #000;
+  padding-left: 0.5rem;
 }
-.main-nav .nav-item:first-child {
-  display: none;
+.main-nav .nav-item .nav-link:hover{
+  color: var(  --red-nav-item);
+  border-color: var(  --red-nav-item);
 }
 .main-nav .nav-item {
   margin-left: 0.9rem;
+}
+.main-nav .nav-item .nav-link{
+  line-height: 3px;
 }
 .main-nav .nav-item:last-of-type .nav-link {
   color: var(--dark-red-color);
@@ -73,21 +77,9 @@ box-sizing: border-box;
   height: 18px;
   width: 18px;
 }
-.product-list{
-  display: none;
-  background-color: var(--white-color);
-  width:100%;
-    position:absolute;
-    top:41px;
-    right:5px;
-    left: 5px;
-    background:#FFF;
-    border:solid 1px rgba(100, 100, 100, .20);
-    box-shadow:0 3px 8px rgba(0, 0, 0, .20);
-    z-index: 3;
-}
+
 .product-list a{
-  color: var(--grey-color);
+  color: var(--dark-color);
 }
 .head-item{
 font-size: 16px;
@@ -98,8 +90,17 @@ border-bottom: 1px solid #333;
 .sub-item{
 
 }
-.menu-item:hover{
-border-bottom: 2px solid var( --menu-item-color);
+.menu-item{
+  margin-left: 16px;
+  box-shadow: 0 2px 0 transparent; 
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+.menu-item:hover {
+box-shadow: 0 2px 0 var( --menu-item-color);
+}
+.menu-item .nav-link{
+  padding: 0;
 }
 .column{
   width: 300px;
@@ -109,9 +110,7 @@ border-bottom: 2px solid var( --menu-item-color);
   font-weight: bolder;
   
 }
-.menu-item{
-  margin-left: 16px;
-}
+
 @media screen and (max-width: 576px) {
   .login {
     font-size: 8px;
@@ -127,9 +126,20 @@ border-bottom: 2px solid var( --menu-item-color);
     justify-content: flex-end;
   }
 }
-@media screen and (min-width:768px) {
-    .menu-nav .navbar-nav .nav-item:hover > .product-list{
-      display: block;
-    }
-    
+.menu-item:hover > .product-list {
+  max-height: 500px; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-list {
+  position: absolute;
+  max-height: 0;
+  overflow: hidden; 
+  transition: max-height 1.5s ease; 
+  z-index: 66;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  top: calc(100% + 1px); 
+
 }

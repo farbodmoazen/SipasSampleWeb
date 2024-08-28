@@ -20,16 +20,18 @@
     <link rel="stylesheet" href="../Css/slider.css">
     <link rel="stylesheet" href="../Css/description.css">
     <link rel="stylesheet" href="../Css/products.css">
-    <title>Main</title>
+    <title>فروشگاه اینترنتی سیپاس - خرید اینترنتی لوازم جانبی موبایل و کامپیوتر</title>
   </head>
   <body>
     <div class="container-fluid bg-white ">
       <header>
-        <div class="row main-nav">
-          <nav class="navbar p-0">
+        <!-- first navbar -->
+        <div class="row main-nav ">
+          <nav class="navbar p-0 my-2">
             <ul class="navbar-nav">
+              <!-- items -->
               <li class="nav-item">
-                <a class="nav-link" href="#">فروشگاه اینترنتی سیپاس</a>
+                <a class="nav-link" href="#">فروشگاه اینترنتی سیپاس </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">محصولات برتر</a>
@@ -49,7 +51,8 @@
             </ul>
           </nav>
         </div>
-        <div class="row">
+        <!-- logo of website -->
+        <div class="row d-flex justify-content-center align-items-center">
           <div
             class="col-md-12 col-lg-3 order-sm-1 order-md-1 col-8 d-flex logo justify-content-end justify-content-sm-center"
           >
@@ -59,6 +62,7 @@
               alt=""
             />
           </div>
+          <!-- shopping cart and login user -->
           <div
             class="col-md-12 col-lg-3 order-sm-2 order-md-3 col-4 align-self-start d-flex align-items-end justify-content-end p-3 flex-column flex-md-row flex-lg-column flex-xl-row user-status"
           >
@@ -77,6 +81,7 @@
               ورود به حساب کاربری <i class="fas fa-user-circle"></i>
             </button>
           </div>
+          <!-- search input  -->
           <div class="col-lg-6 col-md-12 order-sm-3 order-md-2 col-8">
             <div class="search-wrapper">
               <input
@@ -90,13 +95,15 @@
           </div>
         </div>
         <div class="row">
-          <nav class="navbar menu-nav">
+          <!-- menu to select -->
+          <nav class="navbar menu-nav p-0">
             <ul class="navbar-nav">
               <li class="nav-item menu-item">
                 <a href="#" class="nav-link">موبایل و تبلت <i class="fa fa-caret-down"></i></a>
                 <div class="product-list">
                   <ul class="product-dropdown d-flex  justify-content-between">
                     <ul class="column">
+                      <!-- dropdown with hover -->
                       <li class="head-item py-2"><a  href="#">موبایل</a></li>
                       <li class="head-item py-2"><a  href="#">تبلت</a></li>
                       <li class="head-item py-2"><a  href="#">کارت حافظه</a></li>
@@ -153,19 +160,24 @@
         </div>
       </header>
     </div>
+    <!-- instagram logo -->
     <div class="container bg-white my-2 px-2 mx-4 mx-auto">
       <div class="row advertise mb-4">
         <a class="p-0" href="#"><img class="img-fluid w-100 rounded-2" src="../Images/insta-SIPAS.IR.gif" alt=""></a>
     </div>
+    <!-- slider section-->
       <div class="row slider-section">
         <div class="col-4 d-flex flex-column justify-content-center ">
+          <!-- images of aside -->
         <a href="#"><img class="w-75" src="../images/aside/1.png" alt=""></a>
         <a href="#"><img class="w-75" src="../images/aside/2.png" alt=""></a>
         <a href="#"><img class="w-75" src="../images/aside/3.png" alt=""></a>
     </div>
     <div class="col-8">
+      <!-- slider -->
       <div dir="ltr" id="carouselExampleDark" class="carousel slide h-100" data-bs-interval="2000" data-bs-ride="carousel">
           <div class="carousel-inner ">
+            <!-- images of slider -->
               <div class="carousel-item active">
                   <a href="#"><img src="../images/slider/1.jpg" class="d-block w-100 img-slider h-100 " alt="..."></a>
                   <div class="carousel-caption d-none d-md-block"></div>
@@ -179,6 +191,7 @@
                   <div class="carousel-caption d-none d-md-block"></div>
               </div>
           </div>
+          <!-- next and prev button slider -->
           <button class="carousel-control-next custom-control" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
               <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
@@ -187,6 +200,7 @@
               <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
           </button>
+          <!-- btn circle rounded slider -->
           <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -194,6 +208,7 @@
           </div>
       </div>
   </div>
+  <!-- sharzh and ersal images -->
         <div class="row suggestions my-4">
           <div class="col-6">        <a href=""><img class="w-100 rounded-4" src="../Images/suggestions/ersal-840x240.jpg" alt=""></a>
           </div>
@@ -201,6 +216,7 @@
           </div>
         </div>
       </div>
+      <!-- description,quick links -->
       <div class="col-12 d-flex description my-4 justify-content-center  align-items-center">
         <div class=" desc-card ms-2 py-2">
           <a href="#" class="d-flex flex-column justify-content-center align-items-center">
@@ -242,6 +258,7 @@
       <div class="row text-center title-header rounded-4 shadow-lg mx-1 my-2 ">
         <p class="h5 fw-bolder">جدیدترین های سیپاس</p>
       </div>
+      <!-- products -->
       <div class="row g-0 products">
         <div class="col-2">
         <div class="card bg-white">
@@ -455,6 +472,39 @@
       <div class="row text-center title-header rounded-4 shadow-lg mx-1 my-2 ">
         <p class="h5 fw-bolder">محصولات شیاومی</p>
       </div>
+      </div>
+      <div class="row  g-0 products">
+        <div class="col-2">
+          <div class="card bg-white">
+            <div class="bg-white card-header">
+                <span class="discount rounded-circle p-1 bg-danger z-index-1  position-absolute  text-white">12%</span>
+                <img class="img-fluid" src="../images/new-products/headphone-lenovo-th30-sipas.ir-10-550x550.jpg" alt="">
+            </div>
+            <div class=" bg-white card-body"><span>هدست بلوتوثی لنووو</span></div>
+            <div class=" bg-white card-footer">
+           <span>1.100.000</span>
+                <span class="text-decoration-line-through">1.250.000تومان</span>
+            </div>
+            <span class="left-to-right  first-icon"><i class="fa fa fa-shopping-cart text-white "></i></span>
+            <span class="left-to-right  second-icon"><i class="fa  fa-heart text-white"></i></span>
+            <span class="left-to-right  third-icon"><i class="fa fa-retweet text-white "></i></span>
+          </div>
+          </div><div class="col-2">
+            <div class="card bg-white">
+              <div class="bg-white card-header">
+                  <span class="discount rounded-circle p-1 bg-danger z-index-1  position-absolute  text-white">12%</span>
+                  <img class="img-fluid" src="../images/new-products/headphone-lenovo-th30-sipas.ir-10-550x550.jpg" alt="">
+              </div>
+              <div class=" bg-white card-body"><span>هدست بلوتوثی لنووو</span></div>
+              <div class=" bg-white card-footer">
+             <span>1.100.000</span>
+                  <span class="text-decoration-line-through">1.250.000تومان</span>
+              </div>
+              <span class="left-to-right  first-icon"><i class="fa fa fa-shopping-cart text-white "></i></span>
+              <span class="left-to-right  second-icon"><i class="fa  fa-heart text-white"></i></span>
+              <span class="left-to-right  third-icon"><i class="fa fa-retweet text-white "></i></span>
+            </div>
+            </div>
       </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

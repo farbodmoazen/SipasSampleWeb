@@ -1,4 +1,9 @@
 @import url(../Css/colors/colors.css);
+.description{
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: auto;
+}
 .desc-caption{
     font-size: 12px;
     color: #000;
@@ -20,11 +25,7 @@ height: 70px;
     font-size: 12px;
     white-space:nowrap;
 }
-.description{
-    flex-wrap: nowrap;
-    max-width: 1000px;
-    margin: auto;
-}
+
 @media screen and (max-width:900px) {
     .desc-card{
         white-space: wrap;
