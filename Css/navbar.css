@@ -129,18 +129,10 @@ box-shadow: 0 2px 0 var( --menu-item-color);
   top: calc(100% + 1px); 
 
 }
-/* Base style for .mobile-spacing */
-.mobile-spacing::after {
-  content: '                ';
+.left-space{
+  position:static;
 }
-
-/* Media query for screens 768px and wider */
-@media screen and (min-width: 768px) {
-  .mobile-spacing::after {
-    content: '';
-  }
-}
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .login {
     font-size: 8px;
     width: auto;
@@ -153,5 +145,9 @@ box-shadow: 0 2px 0 var( --menu-item-color);
   }
   .logo {
     justify-content: flex-end;
+  }
+  .left-space{
+    position: absolute;
+    right: 0;
   }
 }
