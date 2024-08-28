@@ -27,6 +27,8 @@
   --body-color:#fafafa;
   /* footer colors */
   --light-brown:#d3ac67;
+  /* chat icon colors */
+  --chat-color:rgb(166,129,12);
 }
 /* 
 navbar link hover are bootstrap :link-warning
