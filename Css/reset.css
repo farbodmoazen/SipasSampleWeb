@@ -21,12 +21,14 @@ body {
 
 .navbar-nav {
     float: right; 
-    display: inline-block; 
     list-style-type: none;
+    display: inline-block; 
+
 }
 
 .navbar-nav > li {
     float: right; 
+
 }
 
 .nav-link {
