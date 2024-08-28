@@ -25,6 +25,8 @@
   --border-color:#ced4da;
   /* background-color: ; */
   --body-color:#fafafa;
+  /* footer colors */
+  --light-brown:#d3ac67;
 }
 /* 
 navbar link hover are bootstrap :link-warning

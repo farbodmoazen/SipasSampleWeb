@@ -1,0 +1,34 @@
+.gov-logos-images{
+    width: 110px;
+}
+.appstore-images{
+    max-width: 165px;
+
+}
+.gov-logos{
+    flex-wrap: wrap;
+}
+.access-item{
+    text-align: center;
+    border-left: 1px solid var(--dark-color);
+}
+.access-item:last-of-type{
+border: 0;
+}
+.access-link{
+    color: var(--dark-color);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 0.3rem;
+}
+.access-link:hover{
+    color: var(--menu-item-color);
+}
+.last-footer{
+    font-size: 16px;
+    background-color:var(--light-brown) ;
+}
+.last-footer p{
+    font-size: 13px;
+    font-weight: 800;
+}
