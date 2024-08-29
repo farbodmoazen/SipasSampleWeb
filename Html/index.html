@@ -10,10 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">
     <link rel="stylesheet" href="../Css/navbar.css" />
     <link rel="stylesheet" href="../Css/reset.css" />
@@ -23,6 +20,7 @@
     <link rel="stylesheet" href="../Css/footer.css">
     <link rel="stylesheet" href="../Css/support.css">
     <link rel="stylesheet" href="../Css/scrolltop.css">
+    <link rel="stylesheet" href="../Css/colors/colors.css">
     <title>فروشگاه اینترنتی سیپاس - خرید اینترنتی لوازم جانبی موبایل و کامپیوتر</title>
   </head>
   <body class=" border-top border-danger">
@@ -129,65 +127,45 @@
         <div class="row">
           <!-- menu to select -->
           <nav class="navbar menu-nav p-0">
-            <ul class="navbar-nav d-flex flex-row">
-              <li class="nav-item menu-item">
-                <a href="#" class="nav-link">موبایل و تبلت <i class="fa fa-caret-down"></i></a>
-                <div class="product-list">
-                  <ul class="product-dropdown d-flex  justify-content-between">
-                    <ul class="column">
-                      <!-- dropdown with hover -->
-                      <li class="head-item py-2"><a  href="#">موبایل</a></li>
-                      <li class="head-item py-2"><a  href="#">تبلت</a></li>
-                      <li class="head-item py-2"><a  href="#">کارت حافظه</a></li>
-                      <li class="head-item py-2"><a  href="#">موبایل </a></li>
-                      <li class="head-item py-2"><a  href="#">موبایل</a></li>
-                      <li class="head-item py-2"><a  href="#">موبایل</a></li>
-                    </ul>
-                    <ul class="column">
-                      <li class="head-item py-2" ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">تبلت</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">کارت حافظه</a></li>
-                      <li class="head-item py-2" ><a href="#">موبایل </a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                    </ul>   <ul class="column">
-                      <li class="head-item py-2" ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">تبلت</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">کارت حافظه</a></li>
-                      <li class="head-item py-2" ><a href="#">موبایل </a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                    </ul>
-                    <ul class="column">
-                      <li class="head-item py-2" ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">تبلت</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">کارت حافظه</a></li>
-                      <li class="head-item py-2" ><a href="#">موبایل </a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                    </ul>
-                    <ul class="column">
-                      <li class="head-item py-2" ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">تبلت</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">کارت حافظه</a></li>
-                      <li class="head-item py-2" ><a href="#">موبایل </a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                    </ul>
-                    <ul class="column">
-                      <li class="head-item py-2" ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">تبلت</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">کارت حافظه</a></li>
-                      <li class="head-item py-2" ><a href="#">موبایل </a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                      <li class="sub-item  py-2"  ><a href="#">موبایل</a></li>
-                    </ul>
-                </div>
-              </li>
-              <li  class="nav-item menu-item">
-                <a class="nav-link font-weight-bold text-danger" href="#">فرصت های شغلی</a>
-              </li>
-            </ul>
+            <div class="menu-container">
+              <button class="menu-toggle" id="menu-toggle"><div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div></button>
+              <div class="menu" id="menu">
+                  <div class="menu-header d-flex bg-secondary d-lg-none">
+                    <div class="close-log-in">
+                      <btn class="btn-close"></btn>
+                      <a href="#"><i class="fa fa-sign-in"></i>وارد شوید </a>
+                    </div>
+                    <a href="#" class="register"><i class="fa fa-user-plus"></i>ثبت نام کنید </a>
+                  </div>
+                  <div class=" d-lg-none text-secondary">
+                      <p class="m-0">فروشگاه اینترنتی سیپاس</p>
+                  </div>
+                  <ul class="navbar-nav d-flex flex-column flex-lg-row">
+                      <li class="nav-item menu-item">
+                          <a href="#" class="nav-link">موبایل و تبلت <i class="fa fa-caret-down d-none d-lg-inline"></i><i class="fa fa-caret-left d-lg-none"></i></a>
+                          <div class="product-list">
+                              <ul class="product-dropdown d-flex justify-content-between">
+                                  <ul class="column">
+                                      <!-- dropdown with hover -->
+                                      <li class="head-item py-2"><a href="#">موبایل</a></li>
+                                      <li class="head-item py-2"><a href="#">تبلت</a></li>
+                                      <li class="head-item py-2"><a href="#">کارت حافظه</a></li>
+                                      <!-- More items -->
+                                  </ul>
+                                  <!-- More columns -->
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="nav-item menu-item">
+                          <a class="nav-link font-weight-bold text-danger" href="#">فرصت های شغلی</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
           </nav>
         </div>
       </header>
