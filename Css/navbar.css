@@ -16,6 +16,7 @@ header{
 }
 .main-nav .nav-item .nav-link{
   line-height: 3px;
+  color: var(--nav-link-color);
 }
 .main-nav .nav-item:last-of-type .nav-link {
   color: var(--dark-red-color);
