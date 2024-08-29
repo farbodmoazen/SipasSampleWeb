@@ -2,7 +2,6 @@
     position: fixed;
     bottom: 8px;
     left: 8px;
-    display: none; 
     width: 40px;
     height: 40px;
     background-color: rgba(51, 51, 51, 0.749);
@@ -12,21 +11,21 @@
     font-size: 24px;
     cursor: pointer;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000; 
-    transition:all  0.6s ease;
-}
-
-.scroll-top-btn:hover {
-    background-color: var(--warning-color);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px); 
+    transition: opacity 0.5s ease, visibility 0.3s ease, transform 0.3s ease; 
 }
 
 .scroll-top-btn.show {
-    display: block; /* Show the button */
     opacity: 1;
     visibility: visible;
+    transform: translateY(0); /* Move the button into view */
 }
 
 .scroll-top-btn.hide {
     opacity: 0;
     visibility: hidden;
+    transform: translateY(50px); /* Move the button out of view */
 }

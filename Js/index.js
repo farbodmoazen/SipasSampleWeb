@@ -49,11 +49,13 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Smoothly scroll to the top when the button is clicked
 scrollTopBtn.addEventListener("click", function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
-
 
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
