@@ -44,6 +44,8 @@ background-color: var(--white-color);
 color: var(--light-btn-color);
 border-radius: 5px;
 box-sizing: border-box;
+white-space: nowrap;
+font-size: 10px;
 }
 .user-status {
   color: var(--light-btn-color);
@@ -57,6 +59,9 @@ box-sizing: border-box;
   background-color: var(--shopping-color);
   padding: 0.5rem;
   font-size: 15px;
+}
+.shopping-cart{
+  white-space: nowrap;
 }
 .shopping-cart-group {
   position: relative;
@@ -73,7 +78,7 @@ box-sizing: border-box;
 .shopping-number {
   position: absolute;
   left: -5px;
-  top: -18px;
+  top: -9px;
   background-color: var(--menu-item-color);
   height: 18px;
   width: 18px;
@@ -133,10 +138,19 @@ box-shadow: 0 2px 0 var( --menu-item-color);
 .left-space{
   position:static;
 }
+@media screen and (max-width:568px) {
+ .login{
+  font-size: 6px;
+ }
+}
 @media screen and (max-width: 768px) {
   .login {
-    font-size: 8px;
+    
     width: auto;
+    height: 30px;
+    position: absolute;
+    left: 2px;
+    top: 11%;
   }
   .login i {
     display: none;
@@ -150,5 +164,8 @@ box-shadow: 0 2px 0 var( --menu-item-color);
   .left-space{
     position: absolute;
     right: 0;
+  }
+  .shopping-cart{
+    height: 100%;
   }
 }
