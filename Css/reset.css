@@ -5,7 +5,9 @@
     margin: 0;
     padding: 0;  
 }
-
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     width: 4px; 
 }
