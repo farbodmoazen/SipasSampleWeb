@@ -1,7 +1,7 @@
 .scroll-top-btn {
     position: fixed;
-    bottom: 8px;
-    left: 8px;
+    bottom: 20px;
+    left:60px;
     width: 40px;
     height: 40px;
     background-color: rgba(51, 51, 51, 0.749);

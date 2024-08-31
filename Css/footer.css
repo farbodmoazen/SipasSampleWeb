@@ -32,3 +32,6 @@ border: 0;
     font-size: 13px;
     font-weight: 800;
 }
+.footer-accessibility ul{
+flex-wrap: wrap;
+}
