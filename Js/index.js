@@ -100,17 +100,35 @@ document.getElementById('close-mobile').addEventListener('click', function() {
   }
 }
 
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1.6, // Adjust the value to control how much of the next/previous card is visible
-    spaceBetween: 0, // Space between the cards
-    centeredSlides: true, // Center the active slide
-    loop: true, // Enable looping
-    autoplay: {
-      delay: 2000, // 2 seconds delay for each card
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+function initSwiper() {
+    if (window.innerWidth <= 768) {
+      // Initialize Swiper only if screen width is 768px or less
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1.6, // Adjust the value to control how much of the next/previous card is visible
+        spaceBetween: 0, // Space between the cards
+        centeredSlides: true, // Center the active slide
+        autoplay: {
+          delay: 3000, // 2 seconds delay for each card
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+
+    }
+  }
+
+  // Initialize Swiper on page load if screen width is <= 768px
+  initSwiper();
+
+  // Re-initialize Swiper when the window is resized
+  window.addEventListener('resize', function () {
+    // Destroy the swiper instance if screen is larger than 768px
+    if (window.innerWidth > 768 && typeof swiper !== 'undefined') {
+      swiper.destroy(true, true);
+    } else {
+      initSwiper();
+    }
   });
