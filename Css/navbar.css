@@ -117,6 +117,7 @@ color: var(--dark-color);
 .jobs{
   color: var(--dark-color);
 }
+
 @media screen and (max-width:568px) {
   .login{
    font-size: 8px;
@@ -124,7 +125,6 @@ color: var(--dark-color);
  }
  @media screen and (max-width: 768px) {
    .login {
-     
      width: auto;
      height: 33px;
 
@@ -141,6 +141,11 @@ color: var(--dark-color);
 
    .shopping-cart{
      height: 100%;
+   }
+   .search{
+    position: absolute;
+    right: 0;
+    top: 133px;
    }
  }
  @media screen and (max-width:991px) {
