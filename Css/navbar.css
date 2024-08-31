@@ -147,6 +147,16 @@ color: var(--dark-color);
     right: 0;
     top: 133px;
    }
+   .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
  }
  @media screen and (max-width:991px) {
   .menu-container {

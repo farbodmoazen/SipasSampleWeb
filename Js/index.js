@@ -79,3 +79,18 @@ document.getElementById('close-mobile').addEventListener('click', function() {
     const menu = document.querySelector('.menu');
     menu.classList.remove('active');
 });
+
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.2, // Adjust the value to control how much of the next/previous card is visible
+    spaceBetween: 10, // Space between the cards
+    centeredSlides: true, // Center the active slide
+    loop: true, // Enable looping
+    autoplay: {
+      delay: 2000, // 2 seconds delay for each card
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
