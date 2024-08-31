@@ -79,10 +79,13 @@ border-top: 1px solid rgba(204, 204, 204, 0.484);
   color: var(--white-color);
   filter: brightness(1.75);
 }
-.more-text{
+.more-link-card{
+  height: auto;
+}
+.more-link {
   color: var(--blue-btn-color);
 }
-.more-text:hover{
+.more-link:hover{
 color: var(--red-color);
 }
 .figure {
@@ -101,6 +104,7 @@ color: var(--red-color);
 .figure:hover img.img-product.img-hover {
   opacity: 1;
 }
+
 @media screen and (max-width:768px) {
   .swiper-container {
     width: 100%;

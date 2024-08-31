@@ -86,7 +86,6 @@ function initSwiper() {
         slidesPerView: 1.6, // Adjust the value to control how much of the next/previous card is visible
         spaceBetween: 0, // Space between the cards
         centeredSlides: true, // Center the active slide
-        loop: true, // Enable loop
         autoplay: {
           delay: 3000, // 3 seconds delay for each card
           disableOnInteraction: false,
