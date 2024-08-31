@@ -80,9 +80,29 @@ document.getElementById('close-mobile').addEventListener('click', function() {
     menu.classList.remove('active');
 });
 
+ function initSwiper() {
+  if (window.innerWidth <= 768) {
+    // Initialize Swiper only if screen width is 768px or less
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.6,
+      spaceBetween: 0,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  }
+}
+
 const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1.2, // Adjust the value to control how much of the next/previous card is visible
-    spaceBetween: 10, // Space between the cards
+    slidesPerView: 1.6, // Adjust the value to control how much of the next/previous card is visible
+    spaceBetween: 0, // Space between the cards
     centeredSlides: true, // Center the active slide
     loop: true, // Enable looping
     autoplay: {

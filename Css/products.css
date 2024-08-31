@@ -54,6 +54,10 @@ visibility: visible;
   border-left:1px solid rgba(204, 204, 204, 0.484);
 
 }
+.img-card{
+  width: 160px;
+  height: 160px;
+}
 .products .col-2:first-child .card {
   border-right: 0;
 }
