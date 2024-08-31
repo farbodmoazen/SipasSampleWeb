@@ -138,42 +138,45 @@ color: var(--dark-color);
 .left-space{
   position:static;
 }
-@media screen and (max-width:568px) {
- .login{
-  font-size: 6px;
- }
-}
-@media screen and (max-width: 768px) {
-  .login {
-    
-    width: auto;
-    height: 30px;
-    position: absolute;
-    left: 2px;
-    top: 11%;
-  }
-  .login i {
-    display: none;
-  }
-  .shopping-info {
-    display: none;
-  }
-  .logo {
-    justify-content: flex-end;
-  }
-  .left-space{
-    position: absolute;
-    right: 0;
-  }
-  .shopping-cart{
-    height: 100%;
-  }
-}
 .menu-toggle{
   display: none;
 }
-@media screen and (max-width:991px) {
-  menu-container {
+.jobs{
+  color: var(--dark-color);
+}
+@media screen and (max-width:568px) {
+  .login{
+   font-size: 6px;
+  }
+ }
+ @media screen and (max-width: 768px) {
+   .login {
+     
+     width: auto;
+     height: 30px;
+     position: absolute;
+     left: 2px;
+     top: 11%;
+   }
+   .login i {
+     display: none;
+   }
+   .shopping-info {
+     display: none;
+   }
+   .logo {
+     justify-content: flex-end;
+   }
+   .left-space{
+     position: absolute;
+     right: 0;
+   }
+   .shopping-cart{
+     height: 100%;
+   }
+ }
+ @media screen and (max-width:991px) {
+  .menu-container {
     position: relative;
 }
 
@@ -193,8 +196,8 @@ color: var(--dark-color);
 
 .menu {
     display: none;
-    width: 250px;
-    background: #333;
+    width: 200px;
+    background: var(--white-color);
     position: fixed;
     top: 0;
     right: 0;
@@ -202,9 +205,44 @@ color: var(--dark-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10001;
 }
-
-
-
+.menu-header{
+  background-color:var(--secondary-menu-color) ;
+}
+.menu-header a{
+  color: var(--white-color);
+  font-size: 8px;
+  padding: 0.9rem 1.2rem;
+  white-space: nowrap;
+}
+.menu-header .btn-close{
+  font-size: 6px;
+  filter: invert(100%);
+  opacity: 1;
+  padding-right: 10px;
+}
+.menu-item{
+  width: 200px;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.menu-item:hover{
+box-shadow: none;
+}
+.jobs{
+  color: var(--dark-color);
+}
+.menu-item .nav-link:hover{
+  text-decoration: none;
+  color:var(--dark-red-color);
+}
+.open-list{
+  font-size: 11px;
+}
+.mobile-menu-header{
+  font-size: 12px;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
 
 
 .nav-item a {

@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menuToggle.addEventListener('click', function() {
         menu.classList.toggle('active');
+    
     });
 
     // Optional: close the menu when clicking outside
@@ -72,4 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('active');
         }
     });
+});
+//close menu
+document.getElementById('close-mobile').addEventListener('click', function() {
+    const menu = document.querySelector('.menu');
+    menu.classList.remove('active');
 });
