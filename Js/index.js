@@ -22,7 +22,7 @@ document.getElementById('chat-icon').addEventListener('click', function() {
     const chatBox = document.querySelector('.chat-box');
     const chatIcon = document.querySelector('.chat-icon');
 
-    chatBox.style.display = 'block'; // Show chat box
+    chatBox.style.display = 'flex'; // Show chat box
     chatIcon.style.display = 'none'; // Hide chat icon
 });
 //close chatbox
