@@ -93,9 +93,6 @@ font-weight: bold;
 border-bottom: 1px solid #333;
 
 }
-.sub-item{
-
-}
 .menu-item{
   margin-left: 16px;
   box-shadow: 0 2px 0 transparent; 
@@ -108,35 +105,11 @@ box-shadow: 0 2px 0 var( --menu-item-color);
 .menu-item .nav-link{
   padding: 0;
 }
-.column{
-  width: 300px;
-  padding: 2rem;
-}
 .menu-nav .nav-link{
 color: var(--dark-color);
 }
 .menu-nav .nav-link:hover{
   color: var(--menu-item-color);
-}
-.menu-item:hover > .product-list {
-  max-height: 500px; 
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.product-list {
-  position: absolute;
-  max-height: 0;
-  overflow: hidden; 
-  transition: max-height 1.5s ease; 
-  z-index: 66;
-  width: 100%;
-  margin: 0 auto;
-  background-color: var(--white-color);
-  top: calc(100% + 1px); 
-
-}
-.left-space{
-  position:static;
 }
 .menu-toggle{
   display: none;
@@ -167,10 +140,7 @@ color: var(--dark-color);
    .logo {
      justify-content: flex-end;
    }
-   .left-space{
-     position: absolute;
-     right: 0;
-   }
+
    .shopping-cart{
      height: 100%;
    }
@@ -190,13 +160,13 @@ color: var(--dark-color);
     z-index: 1000;
     background-color: transparent;
     position:absolute;
-    top: -60px;
+    top: -70px;
     right: -8px;
 }
 
 .menu {
     display: none;
-    width: 200px;
+    width: 300px;
     background: var(--white-color);
     position: fixed;
     top: 0;
@@ -215,13 +185,13 @@ color: var(--dark-color);
   white-space: nowrap;
 }
 .menu-header .btn-close{
-  font-size: 6px;
+  font-size: 12px;
   filter: invert(100%);
   opacity: 1;
-  padding-right: 10px;
+  padding-right: 14px;
 }
 .menu-item{
-  width: 200px;
+  width: 300px;
   padding: 0.5rem 0.8rem;
   border-bottom: 1px solid var(--border-color);
 }
@@ -289,11 +259,35 @@ box-shadow: none;
   flex-direction: column;
   justify-content: space-between; 
   height: 11px;
- 
 }
-
+.product-list{
+  display: none;
+}
 .line {
-  height: 1.2px;
+  height: 2px;
   background-color: black; 
 }
+}
+@media screen and (min-width:992px) {
+  .menu-item:hover > .product-list {
+    max-height: 500px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .product-list {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height 1.5s ease; 
+    z-index: 66;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    top: calc(100% + 1px); 
+  
+  }
+  .column{
+    width: 300px;
+    padding: 2rem;
+  }
 }

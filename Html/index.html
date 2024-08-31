@@ -35,16 +35,30 @@
         <div class="chat-header">
           <div class="info">
             <div class="images">
-
+              <img src="../Images/support-chat/profile.png" alt="">
+              <img src="../Images/support-chat/profile.png" alt="">
+              <img src="../Images/support-chat/profile.png" alt="">
             </div>
             <div class="info-text">
-              <p class="fw-bold"></p>
-              <p></p>
+              <p class="fw-bold">پشتیبان سیپاس</p>
+              <p>پاسخگوی سوالات شما هستیم
+              </p>
             </div>
           </div>
           <button type="button" class="btn-close" id="close-chat" aria-label="Close"></button>
         </div>
+        <div class="support-chat"> 
+          <p>کاربر گرامی ؛ بخش پشتیبانی در حال حاضر امکان پاسخگویی به شما را ندارد. لطفا سوال را در فرم زیر وارد نمایید،کارشناسان سیپاس در اسرع وقت پاسخگویی شما خواهند بود.</p>
+          <form action="#" method="post">
+            <input type="text" name="name" id="name" placeholder="نام">
+            <input type="text" name="number" id="number" placeholder="شماره تلفن همراه">
+            <input type="text" name="question" id="question" placeholder="سوال شما">
+            <input type="submit" value="ارسال">
+          </form>
+          <span>سامانه گفتگوی آنلاین <i></i> گفتینو</span>
+        </div>
       </div>
+     
       <div class="chat-icon" id="chat-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
               <path d="M60.19,53.75a3,3,0,1,0,3.06,3A3,3,0,0,0,60.19,53.75Zm-11.37,0a3,3,0,1,0,3.06,3A3,3,0,0,0,48.81,53.75Zm45.94,4A35,35,0,1,0,52.75,92v12.76s14.55-4.25,30.53-19.28C94.68,74.74,94.75,59.41,94.75,59.41l0,0C94.74,58.87,94.75,58.3,94.75,57.72Zm-10.14.6s0,10.64-8,18.09A57.93,57.93,0,0,1,53,89.8V80.34A24.29,24.29,0,1,1,84.61,57.16c0,.4,0,.8,0,1.19ZM70.69,53.75a3,3,0,1,0,3.06,3A3,3,0,0,0,70.69,53.75Z" transform="translate(0.25 0.25)" style="fill:#ffffff"></path>
@@ -62,7 +76,7 @@
               <li class="nav-item   d-none d-md-block ">
                 <a class="nav-link" href="#">فروشگاه اینترنتی سیپاس </a>
               </li>
-              <li class="nav-item  left-space ">
+              <li class="nav-item ">
                 <a class="nav-link " href="# ">محصولات برتر</a>
               </li>
               <li class="nav-item ">
@@ -147,7 +161,7 @@
                   <ul class="navbar-nav d-flex flex-column flex-lg-row">
                       <li  class="nav-item menu-item d-flex justify-content-between align-items-center">
                           <a href="#" class="nav-link d-flex "><span class="mobile-header">موبایل و تبلت</span> <i class="fa fa-caret-down d-none d-lg-inline"></i></a><a href="#"><i class="fa fa-caret-left d-lg-none text-secondary open-list"></i></a>
-                          <div class="product-list">
+                          <div class="product-list ">
                               <ul class="product-dropdown d-flex justify-content-between">
                                   <ul class="column">
                                       <!-- dropdown with hover -->
@@ -155,7 +169,12 @@
                                       <li class="head-item py-2"><a href="#">تبلت</a></li>
                                       <li class="head-item py-2"><a href="#">کارت حافظه</a></li>    
                                   </ul>
-      
+                                  <ul class="column">
+                                    <!-- dropdown with hover -->
+                                    <li class="head-item py-2"><a href="#">موبایل</a></li>
+                                    <li class="sub-item py-2"><a href="#">تبلت</a></li>
+                                    <li class="sub-item py-2"><a href="#">کارت حافظه</a></li>    
+                                </ul>
                               </ul>
                           </div>
                       </li>
@@ -218,7 +237,7 @@
       </div>
   </div>
   <!-- sharzh and ersal images -->
-        <div class="row suggestions my-4">
+        <div class="row suggestions my-4 g-2 px-3">
           <div class="col-12 col-md-6">        <a href=""><img class="w-100 rounded-4" src="../Images/suggestions/ersal-840x240.jpg" alt=""></a>
           </div>
           <div class="col-12 col-md-6">        <a href=""><img class="w-100 rounded-4" src="../Images/suggestions/sharzh-840x240.jpg" alt=""></a>
@@ -226,7 +245,7 @@
         </div>
       </div>
       <!-- description,quick links -->
-      <div class="col-12 d-flex description my-4 justify-content-center  align-items-center">
+      <div class="col-12 d-none d-lg-flex description my-4 justify-content-center  align-items-center ">
         <div class=" desc-card ms-2 py-2">
           <a href="#" class="d-flex flex-column justify-content-center align-items-center">
             <img  class="desc-img" src="../Images/description/1.png" alt="">

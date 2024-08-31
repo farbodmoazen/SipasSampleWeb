@@ -7,7 +7,7 @@
 }
 
 .chat-box {
-    width: 340px;
+    width: 400px;
     height: 500px;
     background-color: var(--white-color);
     color: white;
@@ -17,7 +17,6 @@
     position: fixed;
     bottom: 35px;
     left: 35px;
-   
 }
 
 .chat-icon {
@@ -83,5 +82,13 @@
     }
     100%{
         transform: rotate(0);
+    }
+}
+@media screen and (max-width:568px) {
+    .chat-box{
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
     }
 }
