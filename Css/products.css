@@ -74,11 +74,10 @@ border-top: 1px solid rgba(204, 204, 204, 0.484);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    text-shadow:1px 0px 6px #fff;
 }
-.diss-text{
-  color: var(--white-color);
-  filter: brightness(1.75);
-}
+
 .more-link-card{
   height: auto;
 }

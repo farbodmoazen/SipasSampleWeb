@@ -17,6 +17,8 @@ header{
 .main-nav .nav-item .nav-link{
   line-height: 3px;
   color: var(--nav-link-color);
+  font-size: 9px;
+  text-size-adjust: 100%;
 }
 .main-nav .nav-item:last-of-type .nav-link {
   color: var(--dark-red-color);
@@ -88,10 +90,13 @@ font-size: 10px;
   color: var(--dark-color);
 }
 .head-item{
-font-size: 16px;
+font-size: 12px;
 font-weight: bold;
-border-bottom: 1px solid #333;
+border-bottom: 1px solid var(--border-color);
 
+}
+.sub-item{
+font-size: 10px;
 }
 .menu-item{
   margin-left: 16px;
@@ -113,9 +118,6 @@ color: var(--dark-color);
 }
 .menu-toggle{
   display: none;
-}
-.jobs{
-  color: var(--dark-color);
 }
 #openProduct{
   border: none;
@@ -258,7 +260,6 @@ box-shadow: none;
 .head-item a, .sub-item a {
     color: #ddd;
     text-decoration: none;
-    font-size: 5px;
 }
 .menu.active {
     display: block;
@@ -287,7 +288,7 @@ box-shadow: none;
     overflow: hidden; 
     transition: max-height 1.5s ease; 
     z-index: 66;
-    width: 100%;
+    width: auto;
     margin: 0 auto;
     background-color: var(--white-color);
     top: calc(100% + 1px); 
@@ -296,6 +297,12 @@ box-shadow: none;
   .column{
     width: 300px;
     padding: 2rem;
+  }
+  .menu-item .jobs{
+    color: var(--dark-red-color);
+  }
+  .menu-item .jobs:hover{
+    color: var(--dark-red-color);
   }
   
 }
