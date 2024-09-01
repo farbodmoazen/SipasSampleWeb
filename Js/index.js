@@ -1,3 +1,8 @@
+let openBtn=document.getElementById('openProduct');
+let productList=document.getElementById('productList');
+openBtn.addEventListener('click',()=>{
+  productList.style.display='block';
+})
 // Function to convert English digits to Persian digits
 function convertToPersianNumbers(text) {
     const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
@@ -122,3 +127,4 @@ function initSwiper() {
       initSwiper();
     }
   });
+

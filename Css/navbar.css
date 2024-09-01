@@ -157,7 +157,24 @@ color: var(--dark-color);
   .menu-container {
     position: relative;
 }
-
+.product-list{
+  display: none;
+  width: 300px;
+  height: 600px;
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10002;
+}
+#backMain{
+  background-color: transparent;
+  border: 0;
+  color: var(--white-color);
+  padding: 0 0.8rem;
+}
 .menu-toggle {
   display: block;
     color: #333;
@@ -175,6 +192,7 @@ color: var(--dark-color);
 .menu {
     display: none;
     width: 300px;
+    height: 600px;
     background: var(--white-color);
     position: fixed;
     top: 0;
@@ -185,11 +203,12 @@ color: var(--dark-color);
 }
 .menu-header{
   background-color:var(--secondary-menu-color) ;
+  height: 45px;
 }
 .menu-header a{
   color: var(--white-color);
   font-size: 8px;
-  padding: 0.9rem 1.2rem;
+  padding: 0 1.2rem;
   white-space: nowrap;
 }
 .menu-header .btn-close{
@@ -206,9 +225,7 @@ color: var(--dark-color);
 .menu-item:hover{
 box-shadow: none;
 }
-.jobs{
-  color: var(--dark-color);
-}
+
 .menu-item .nav-link:hover{
   text-decoration: none;
   color:var(--dark-red-color);
@@ -227,19 +244,8 @@ box-shadow: none;
     color: #fff;
     text-decoration: none;
 }
-
-.product-list {
-    display: none; 
-}
-.product-list.acitve{
-
-}
-
-.product-dropdown {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+.jobs{
+  color: var(--dark-color);
 }
 
 .column {
@@ -250,7 +256,6 @@ box-shadow: none;
 
 .head-item, .sub-item {
     padding: 10px;
-    background: #222;
 }
 .head-item a, .sub-item a {
     color: #ddd;
@@ -277,7 +282,12 @@ box-shadow: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-
+  .product-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
   .product-list {
     position: absolute;
     max-height: 0;
