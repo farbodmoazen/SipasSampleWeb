@@ -5,6 +5,10 @@
     max-width: 165px;
 
 }
+
+.app-store-list{
+    flex-flow: wrap;
+}
 .gov-logos{
     flex-wrap: wrap;
 }
@@ -34,4 +38,9 @@ border: 0;
 }
 .footer-accessibility ul{
 flex-wrap: wrap;
+}
+@media screen and (max-width:992px) {
+    .app-stores{
+        border: 1px solid black ;
+    }
 }
