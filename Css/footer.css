@@ -47,3 +47,10 @@ flex-wrap: wrap;
         width: 60px;
     }
 }
+.footer-link{
+    font-size: 12px;
+    color: var(--dark-color);
+}
+.footer-link:hover{
+    color: var(--dark-red-color);
+}
