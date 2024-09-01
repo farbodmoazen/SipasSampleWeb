@@ -117,7 +117,10 @@ color: var(--dark-color);
 .jobs{
   color: var(--dark-color);
 }
-
+#openProduct{
+  border: none;
+  background-color: transparent;
+}
 @media screen and (max-width:568px) {
   .login{
    font-size: 8px;
@@ -231,6 +234,9 @@ box-shadow: none;
 .product-list {
     display: none; 
 }
+.product-list.acitve{
+
+}
 
 .product-dropdown {
     display: flex;
@@ -263,9 +269,6 @@ box-shadow: none;
   flex-direction: column;
   justify-content: space-between; 
   height: 11px;
-}
-.product-list{
-  display: none;
 }
 .line {
   height: 2px;
