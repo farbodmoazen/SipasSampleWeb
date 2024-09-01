@@ -1,8 +1,46 @@
-let openBtn=document.getElementById('openProduct');
-let productList=document.getElementById('productList');
-openBtn.addEventListener('click',()=>{
-  productList.style.display='block';
-})
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  const openBtn = document.getElementById('openProduct');
+  const productList = document.getElementById('productList');
+  const backMain = document.getElementById('backMain');
+  const closeMobile = document.getElementById('close-mobile');
+
+  // Toggle the menu
+  menuToggle.addEventListener('click', function() {
+      menu.classList.toggle('active');
+
+      // When opening the menu, ensure all submenus are hidden
+      if (menu.classList.contains('active')) {
+          productList.style.display = 'none';
+      }
+  });
+
+  // Show the product list submenu when clicking openBtn
+  openBtn.addEventListener('click', (event) => {
+      productList.style.display = 'block';
+      event.stopPropagation(); // Prevent the event from bubbling up
+  });
+
+  // Go back to the main menu when clicking the back button
+  backMain.addEventListener('click', () => {
+      productList.style.display = 'none';
+  });
+
+  // Close the menu when clicking outside of it
+  document.addEventListener('click', function(event) {
+      if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+          menu.classList.remove('active');
+          productList.style.display = 'none'; // Hide submenu when closing the menu
+      }
+  });
+
+  // Close the menu when clicking the close button
+  closeMobile.addEventListener('click', function() {
+      menu.classList.remove('active');
+      productList.style.display = 'none'; // Hide submenu when closing the menu
+  });
+});
 // Function to convert English digits to Persian digits
 function convertToPersianNumbers(text) {
     const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
@@ -62,28 +100,7 @@ scrollTopBtn.addEventListener("click", function() {
     });
 });
 
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
 
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('active');
-    
-    });
-
-    // Optional: close the menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-            menu.classList.remove('active');
-        }
-    });
-});
-//close menu
-document.getElementById('close-mobile').addEventListener('click', function() {
-    const menu = document.querySelector('.menu');
-    menu.classList.remove('active');
-});
 
 function initSwiper() {
     if (window.innerWidth <= 768) {
