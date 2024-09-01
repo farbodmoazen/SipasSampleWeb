@@ -249,10 +249,10 @@ box-shadow: none;
     padding: 10px;
     background: #222;
 }
-
 .head-item a, .sub-item a {
     color: #ddd;
     text-decoration: none;
+    font-size: 5px;
 }
 .menu.active {
     display: block;
