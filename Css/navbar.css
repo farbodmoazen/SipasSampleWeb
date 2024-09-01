@@ -175,6 +175,17 @@ color: var(--dark-color);
   color: var(--white-color);
   padding: 0 0.8rem;
 }
+.head-item a,.sub-item a{
+  color: var(--dark-color);
+  font-size: 10px;
+  font-weight: 500;
+}
+.head-item a:hover,.sub-item a:hover{
+  color:var(--dark-red-color);
+}
+.sub-item{
+  display: none;
+}
 .menu-toggle {
   display: block;
     color: #333;
@@ -241,7 +252,6 @@ box-shadow: none;
 
 
 .nav-item a {
-    color: #fff;
     text-decoration: none;
 }
 .jobs{
@@ -257,10 +267,7 @@ box-shadow: none;
 .head-item, .sub-item {
     padding: 10px;
 }
-.head-item a, .sub-item a {
-    color: #ddd;
-    text-decoration: none;
-}
+
 .menu.active {
     display: block;
 }
