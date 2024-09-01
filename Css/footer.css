@@ -1,8 +1,8 @@
 .gov-logos-images{
-    width: 110px;
+    width: 80px;
 }
 .appstore-images{
-    max-width: 165px;
+    width: 165px;
 
 }
 
@@ -42,5 +42,8 @@ flex-wrap: wrap;
 @media screen and (max-width:992px) {
     .app-stores{
         border: 1px solid black ;
+    }
+    .gov-logos-images{
+        width: 60px;
     }
 }
