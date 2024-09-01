@@ -13,17 +13,17 @@
 }
 .first-icon {
   top: 25%;
-  transition: left 0.1s ease-in, visibility 0.09s ease-in;
+  transition: left 0.2s ease-in, visibility 0.19s ease-in;
  
 }
 .second-icon {
   top: 40%;
-  transition: left 0.2s ease-in, visibility 0.19s ease-in;
+  transition: left 0.3s ease-in, visibility 0.29s ease-in;
 
 }
 .third-icon {
   top: 55%;
-  transition: left 0.3s ease-in, visibility 0.29s ease-in;
+  transition: left 0.4s ease-in, visibility 0.39s ease-in;
 }
 
 .card:hover > .first-icon {
@@ -98,7 +98,7 @@ color: var(--red-color);
   bottom: 0;
   object-fit: contain;
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity .2s ease-out;
 }
 .figure:hover img.img-product.img-hover {
   opacity: 1;
