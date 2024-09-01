@@ -77,7 +77,7 @@ li{
     list-style-type: none;
 }
 .container{
-    max-width: 1280px;
+    max-width: 1120px;
     overflow-x: hidden;
 }
 .nav-link {

@@ -109,6 +109,9 @@ color: var(--red-color);
     width: 100%;
     height: auto;
   }
+  .card{
+    width: 80px;
+  }
   
   .swiper-slide {
     display: flex;
