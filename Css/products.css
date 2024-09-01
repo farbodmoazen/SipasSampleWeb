@@ -1,7 +1,7 @@
 .left-to-right {
   position: absolute;
   left: 0.3em;
-  background-color: rgba(0, 0, 0, 0.683);
+  background-color: rgba(0, 0, 0, 0.368);
   padding: 0.5rem;
   width: 33px;
   height:33px;
@@ -13,17 +13,17 @@
 }
 .first-icon {
   top: 25%;
-  transition: left 0.2s ease-in, visibility 0.16s ease-in;
+  transition: left 0.1s ease-in, visibility 0.09s ease-in;
  
 }
 .second-icon {
   top: 40%;
-  transition: left 0.3s ease-in, visibility 0.26s ease-in;
+  transition: left 0.2s ease-in, visibility 0.19s ease-in;
 
 }
 .third-icon {
   top: 55%;
-  transition: left 0.4s ease-in, visibility 0.36s ease-in;
+  transition: left 0.3s ease-in, visibility 0.29s ease-in;
 }
 
 .card:hover > .first-icon {
