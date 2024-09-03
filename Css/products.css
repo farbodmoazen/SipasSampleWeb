@@ -1,3 +1,5 @@
+@import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
 .left-to-right {
   position: absolute;
   left: 0.3em;
@@ -54,8 +56,8 @@ visibility: visible;
   border-left:1px solid rgba(204, 204, 204, 0.484);
 }
 .img-card{
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
 }
 
 .products .col-2:nth-child(n+7):nth-child(-n+12) .card {

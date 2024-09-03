@@ -1,10 +1,17 @@
 @import url(../Css/variables.css);
 @import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
 @font-face {
     font-family: 'IranSans';
-    src:  url(../font/irsans.ttf),
-          url(../font/irsansb.ttf);
-  }
+    src: url('../font/irans.ttf') format('truetype'); /* Regular Font */
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: url('../font/iransb.ttf') format('truetype'); /* Bold Font */
+    font-weight: bold;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -77,7 +84,7 @@ li{
     list-style-type: none;
 }
 .container{
-    max-width: 1120px;
+    max-width: 1400px;
     overflow-x: hidden;
 }
 .nav-link {

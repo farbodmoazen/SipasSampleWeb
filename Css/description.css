@@ -1,4 +1,5 @@
 @import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
 .description{
     flex-wrap: nowrap;
     max-width: 1000px;
@@ -23,7 +24,7 @@ height: 70px;
     border-radius: 30px;
     width:  16.66%;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     white-space:nowrap;
 
 }

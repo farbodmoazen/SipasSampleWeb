@@ -1,5 +1,6 @@
 @import url(../Css/variables.css);
 @import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
 header {
   padding: 0 15px;
 }
@@ -17,7 +18,7 @@ header {
 .main-nav .nav-item .nav-link {
   line-height: 3px;
   color: var(--nav-link-color);
-  font-size: 9px;
+  font-size: 12px;
 }
 .main-nav .nav-item:last-of-type .nav-link {
   color: var(--dark-red-color);
@@ -57,7 +58,6 @@ header {
   border-radius: 50%;
   background-color: var(--shopping-color);
   padding: 0.5rem;
-  font-size: 15px;
 }
 .shopping-cart {
   white-space: nowrap;
@@ -119,9 +119,37 @@ header {
   border: none;
   background-color: transparent;
 }
+.best-li {
+  position: relative;
+}
+
+.best-list {
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 2px rgb(209, 209, 209);
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  z-index: 2000000;
+  font-size: 10px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.best-list li {
+  padding: 0.6rem 0.4rem;
+}
+
+#best-item:hover + .best-list,
+.nav-item:hover .best-list {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (max-width: 568px) {
   .login {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -145,7 +173,7 @@ header {
   .search {
     position: absolute;
     right: 0;
-    top: 113px;
+    top: 130px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -322,31 +350,4 @@ header {
   .menu-item .jobs:hover {
     color: var(--dark-red-color);
   }
-}
-.best-li {
-  position: relative;
-}
-
-.best-list {
-  opacity: 0;
-  visibility: hidden;
-  background-color: white;
-  box-shadow: 1px 1px 2px rgb(209, 209, 209);
-  border-radius: 10px;
-  position: absolute;
-  top: 20px;
-  z-index: 2000000;
-  font-size: 10px;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-
-.best-list li {
-  padding: 0.6rem 0.4rem;
-}
-
-#best-item:hover + .best-list,
-.nav-item:hover .best-list {
-  opacity: 1;
-  visibility: visible;
 }

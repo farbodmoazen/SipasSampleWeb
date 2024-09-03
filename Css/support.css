@@ -1,4 +1,5 @@
-@import url(../Css/colors/colors.css);
+@import url(../Css/variables.css);
+/* respnsives are at the end of file */
 .support {
     position: fixed;
     bottom: 2%;

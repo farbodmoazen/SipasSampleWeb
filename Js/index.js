@@ -1,3 +1,4 @@
+// for mobile menu
 document.addEventListener('DOMContentLoaded', function() {
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
@@ -41,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
       productList.style.display = 'none'; // Hide submenu when closing the menu
   });
 });
+// end mobile menu
+// number converting
 // Function to convert English digits to Persian digits
 function convertToPersianNumbers(text) {
     const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
@@ -60,6 +63,8 @@ function convertNumbersInElement(element) {
 document.addEventListener('DOMContentLoaded', () => {
     convertNumbersInElement(document.body);
 });
+// end number converting
+
 //chat support
 document.getElementById('chat-icon').addEventListener('click', function() {
     const chatBox = document.querySelector('.chat-box');
@@ -76,6 +81,8 @@ document.getElementById('close-chat').addEventListener('click', function() {
     chatBox.style.display = 'none'; // Hide chat box
     chatIcon.style.display = 'block'; // Show chat icon
 });
+// end 
+// scroll 
 // Get the button
 let scrollTopBtn = document.getElementById("scrollTopBtn");
 
@@ -100,8 +107,8 @@ scrollTopBtn.addEventListener("click", function() {
     });
 });
 
-
-
+// end scroll
+// swipper for menu
 function initSwiper() {
     if (window.innerWidth <= 768) {
       const swiper = new Swiper('.swiper-container', {
@@ -144,4 +151,4 @@ function initSwiper() {
       initSwiper();
     }
   });
-
+// end swipper
