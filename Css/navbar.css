@@ -65,13 +65,25 @@ opacity: 0.7;
   border: 1px solid transparent;
   border-radius: 50%;
   background-color: var(--shopping-color);
-  padding: 0.5rem;
+  width:  38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping-icon img{
+  width: 16px;
+  height:16px;
+  opacity: 0.8;
 }
 .shopping-cart {
   white-space: nowrap;
 }
 .shopping-cart-group {
   position: relative;
+}
+.fa-user-circle-o{
+  padding-right: 4px;
 }
 .icon-circled {
   border: 1px solid transparent;
@@ -84,11 +96,12 @@ opacity: 0.7;
 }
 .shopping-number {
   position: absolute;
-  left: -5px;
-  top: -9px;
+  left: -9px;
+  top: -10.5px;
   background-color: var(--menu-item-color);
-  height: 18px;
-  width: 18px;
+  height:22px;
+  width: 22px;
+  z-index: 2;
 }
 
 .product-list a {
