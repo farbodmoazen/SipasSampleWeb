@@ -12,7 +12,6 @@
     height: 500px;
     background-color: var(--white-color);
     color: white;
-    border-radius: 10px;
     box-shadow: 1px 1px 10px 2px var(--grey-color);
     display: none; 
     flex-direction: column;
@@ -20,7 +19,9 @@
     bottom: 35px;
     left: 35px;
     background-image: url(../Images/support-chat/background.jpeg);
-
+    height: auto;
+    padding-bottom: 2rem;
+    border-radius: 10px;
 }
 
 .chat-icon {
@@ -49,14 +50,13 @@
     color: var(--white-color);
     background-color: var(--chat-color);
     height: 60px;
+    border-radius: 10px;
 }
-.chat-header .images img{
-width: 22px;
-height: 22px;
-border-radius: 50%;
-}
-.info{
-    display: flex;
+
+
+.info-text{
+    position: absolute;
+    right: 80px;
 }
 .supp-desc{
     font-size: 12px;
@@ -118,6 +118,29 @@ opacity: 0.5;
 width: 15px;
 height:15px;
 }
+.images{
+    position: relative;
+}
+.images img{
+    position: absolute;
+    top:-24px;
+    width: 44px;
+    height:44px;
+    border-radius: 50%;
+}
+.images img:first-child{
+    z-index: 3;
+}
+.images img:nth-child(2){
+    right: 12px;
+    z-index: 2;
+    opacity: 0.7;
+}
+.images img:nth-child(3){
+    right: 22px;
+    z-index: 1;
+    opacity: 0.5;
+}
 @keyframes shootUp {
     from {
         bottom: -60px; 
@@ -154,5 +177,9 @@ height:15px;
         left: 0;
         height: 100%;
         width: 100%;
+        border-radius: 0;
+    }
+    .chat-header{
+        border-radius: 0;
     }
 }
