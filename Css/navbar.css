@@ -363,3 +363,32 @@ opacity: 0.7;
     color: var(--red-color);
   }
 }
+.shopping-cart {
+  position: relative;
+}
+
+.popover-content {
+  position: absolute;
+  top: 50px; 
+  left: 0;
+  background-color: #fff;
+  color: var(--btn-light-color);
+  padding: 10px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 55px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+
+.shopping-cart:hover .popover-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s; 
+}
