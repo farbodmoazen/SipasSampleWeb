@@ -3,10 +3,14 @@
 .card{
   font-size: 12px;
 }
+.main-price{
+  font-size: 18px;
+  color: var(--dark-red-color);
+}
 .left-to-right {
   position: absolute;
   left: 0.3em;
-  background-color: rgba(0, 0, 0, 0.368);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
   width: 33px;
   height:33px;
