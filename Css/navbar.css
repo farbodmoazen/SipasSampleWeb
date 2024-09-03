@@ -41,6 +41,9 @@ header {
 .search-wrapper i:hover {
   color: var(--menu-item-color);
 }
+.search-wrapper input::placeholder{
+opacity: 0.7;
+}
 .login {
   display: inline-block;
   background-color: var(--white-color);
@@ -48,10 +51,14 @@ header {
   border-radius: 5px;
   box-sizing: border-box;
   white-space: nowrap;
+  padding: 0.3rem 0.5rem;
+}
+.login i{
+  font-size: 20px;
 }
 .user-status {
   color: var(--light-btn-color);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 .shopping-icon {
@@ -152,6 +159,18 @@ header {
   .login {
     font-size: 12px;
   }
+  .main-nav .nav-item .nav-link {
+
+    padding-left: 0;
+    margin-left: 8px;
+  }
+.user-status{
+  position:relative;
+}
+.login{
+  position: absolute;
+  top: 85px;
+}
 }
 @media screen and (max-width: 768px) {
   .login {
@@ -161,21 +180,13 @@ header {
   .login i {
     display: none;
   }
-  .shopping-info {
-    display: none;
-  }
   .logo {
     justify-content: flex-end;
   }
-
   .shopping-cart {
     height: 100%;
   }
-  .search {
-    position: absolute;
-    right: 0;
-    top: 130px;
-  }
+  
 }
 @media screen and (max-width: 991px) {
   .menu-container {
@@ -346,9 +357,9 @@ header {
     padding: 2rem;
   }
   .menu-item .jobs {
-    color: var(--dark-red-color);
+    color: var(--red-color);
   }
   .menu-item .jobs:hover {
-    color: var(--dark-red-color);
+    color: var(--red-color);
   }
 }
