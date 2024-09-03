@@ -369,13 +369,12 @@ opacity: 0.7;
 
 .popover-content {
   position: absolute;
-  top: 50px; 
+  top: 30px; 
   left: 0;
   background-color: #fff;
-  color: var(--btn-light-color);
-  padding: 10px;
+  color: var(--dark-color);
   white-space: nowrap;
-  z-index: 1000;
+  z-index: 5500000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 400px;
   height: 55px;
