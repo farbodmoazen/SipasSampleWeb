@@ -25,12 +25,27 @@ header {
   color: var(--dark-red-color);
 }
 .logo-img {
-  width: 130px;
+  width: 150px;
 }
-
+.menu-nav {
+  width: 100%;
+  position: relative; 
+  background-color: var(--white-color);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000000; 
+  padding: 0;
+}
 .search-wrapper {
   position: relative;
   width: 100%;
+}
+.search-wrapper input{
+  border-radius: 12px;
 }
 .search-wrapper i {
   position: absolute;
@@ -151,7 +166,7 @@ opacity: 0.7;
   box-shadow: 1px 1px 2px rgb(209, 209, 209);
   border-radius: 10px;
   position: absolute;
-  top: 20px;
+  top: 25px;
   z-index: 2000000;
   font-size: 10px;
   transition: all 0.2s;
@@ -161,7 +176,9 @@ opacity: 0.7;
 .best-list li {
   padding: 0.6rem 0.4rem;
 }
-
+.best-li a:hover{
+  background-color: rgb(231, 231, 231);
+}
 #best-item:hover + .best-list,
 .nav-item:hover .best-list {
   opacity: 1;
@@ -364,7 +381,7 @@ opacity: 0.7;
     width: auto;
     margin: 0 auto;
     background-color: var(--white-color);
-    top: calc(100% + 1px);
+    top: calc(100% + -21px);
   }
   .column {
     width: 300px;

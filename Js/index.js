@@ -106,7 +106,16 @@ scrollTopBtn.addEventListener("click", function() {
         behavior: 'smooth'
     });
 });
-
+//sticky navbar
+$(document).ready(function() {
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 100) {
+      $('.menu-nav').addClass('sticky');
+    } else {
+      $('.menu-nav').removeClass('sticky');
+    }
+  });
+});
 // end scroll
 // swipper for menu
 function initSwiper() {

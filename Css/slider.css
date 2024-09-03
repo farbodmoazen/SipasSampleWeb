@@ -2,6 +2,7 @@
 @import url(../Css/variables.css);
 @import url(../Css/colors/colors.css);
 /* respnsives are at the end of file */
+
 .carousel-indicators button[data-bs-target]{
     border-radius: 50%;
     height:10px;
@@ -17,9 +18,9 @@
 .carousel-control-next.custom-control {
   width: 40px;
   height: 40px;
-  background-color: rgba(51, 51, 51, 0.365);
+  background-color: rgba(51, 51, 51);
   border-radius: 0;
-  opacity: 1;
+  opacity: 0.5;
   top: 45%;
 }
 
@@ -32,6 +33,7 @@
 }
 .custom-control:hover{
 background-color: var(--warning-color);
+opacity: 1;
 }
 
 
