@@ -12,13 +12,14 @@ header {
   color: var(--red-nav-item);
   border-color: var(--red-nav-item);
 }
-.main-nav .nav-item {
-  margin-left: 0.9rem;
-}
+
 .main-nav .nav-item .nav-link {
-  line-height: 3px;
   color: var(--nav-link-color);
-  font-size: 12px;
+  font-size: 10px;
+  padding: 0;
+  padding-left: 10px;
+  margin-left: 0.9rem;
+
 }
 .main-nav .nav-item:last-of-type .nav-link {
   color: var(--dark-red-color);
