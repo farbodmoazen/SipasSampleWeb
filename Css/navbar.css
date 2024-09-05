@@ -136,9 +136,11 @@ opacity: 0.7;
   color: var(--dark-color);
 }
 .head-item {
-  font-size: 16px;
   font-weight: 700;
   border-bottom: 1px solid var(--border-color);
+}
+.head-item a{
+  font-size: 16px;
 }
 .sub-item a {
   color: rgb(70, 70, 70);
@@ -202,7 +204,34 @@ opacity: 0.7;
   opacity: 1;
   visibility: visible;
 }
+.shopping-cart {
+  position: relative;
+}
 
+.popover-content {
+  position: absolute;
+  top: 30px; 
+  left: 0;
+  background-color: #fff;
+  color: var(--dark-color);
+  white-space: nowrap;
+  z-index: 5500000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 55px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+
+.shopping-cart:hover .popover-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s; 
+}
 @media screen and (max-width: 568px) {
   .login {
     font-size: 8px;
@@ -411,32 +440,4 @@ opacity: 0.7;
   .menu-item .jobs:hover {
     color: var(--red-color);
   }
-}
-.shopping-cart {
-  position: relative;
-}
-
-.popover-content {
-  position: absolute;
-  top: 30px; 
-  left: 0;
-  background-color: #fff;
-  color: var(--dark-color);
-  white-space: nowrap;
-  z-index: 5500000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 400px;
-  height: 55px;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
-}
-
-.shopping-cart:hover .popover-content {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0s; 
 }
