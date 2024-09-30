@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const productList = document.getElementById('productList');
   const backMain = document.getElementById('backMain');
   const closeMobile = document.getElementById('close-mobile');
-
+  
   // Toggle the menu
   menuToggle.addEventListener('click', function() {
       menu.classList.toggle('active');
@@ -19,22 +19,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Show the product list submenu when clicking openBtn
   openBtn.addEventListener('click', (event) => {
-      productList.style.display = 'block';
-      event.stopPropagation(); // Prevent the event from bubbling up
-  });
+  if (window.innerWidth < 992) {
+    productList.style.display = 'block';
+    event.stopPropagation(); // Prevent the event from bubbling up
+  }
+});
 
   // Go back to the main menu when clicking the back button
   backMain.addEventListener('click', () => {
       productList.style.display = 'none';
   });
 
-  // Close the menu when clicking outside of it
-  document.addEventListener('click', function(event) {
-      if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-          menu.classList.remove('active');
-          productList.style.display = 'none'; // Hide submenu when closing the menu
-      }
-  });
+// Function to handle click event
+function handleClickOutsideMenu(event) {
+    if (window.innerWidth < 992) { // Check if the screen width is smaller than 992px
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('active');
+            productList.style.display = 'none'; // Hide submenu when closing the menu
+        }
+    }
+}
+
+// Add event listener for clicks outside the menu
+document.addEventListener('click', handleClickOutsideMenu);
+
 
   // Close the menu when clicking the close button
   closeMobile.addEventListener('click', function() {
@@ -43,28 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 // end mobile menu
-// number converting
-// Function to convert English digits to Persian digits
-function convertToPersianNumbers(text) {
-    const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
-    return text.replace(/\d/g, (digit) => persianDigits[digit]);
-}
-
-// Function to recursively convert all text nodes in a given element
-function convertNumbersInElement(element) {
-    if (element.nodeType === Node.TEXT_NODE) {
-        element.textContent = convertToPersianNumbers(element.textContent);
-    } else if (element.nodeType === Node.ELEMENT_NODE) {
-        element.childNodes.forEach(convertNumbersInElement);
-    }
-}
-
-// Convert numbers in the entire document
-document.addEventListener('DOMContentLoaded', () => {
-    convertNumbersInElement(document.body);
-});
-// end number converting
-
 //chat support
 document.getElementById('chat-icon').addEventListener('click', function() {
     const chatBox = document.querySelector('.chat-box');
@@ -116,48 +102,52 @@ $(document).ready(function() {
     }
   });
 });
-// end scroll
-// swipper for menu
+
+
+let swiper;
+
 function initSwiper() {
     if (window.innerWidth <= 768) {
-      const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1.6, // Adjust the value to control how much of the next/previous card is visible
-        spaceBetween: 0, // Space between the cards
-        centeredSlides: true, // Center the active slide
-        autoplay: {
-          delay: 3000, // 3 seconds delay for each card
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-  
-      // Stop autoplay on interaction and restart after a short delay
-      swiper.on('touchStart', function () {
-        swiper.autoplay.stop();
-      });
-  
-      swiper.on('touchEnd', function () {
-        setTimeout(() => {
-          swiper.autoplay.start();
-        }, 3000); // Restart autoplay after 3 seconds of inactivity
-      });
-    }
-  }
-  
-  // Initialize Swiper on page load if screen width is <= 768px
-  initSwiper();
-  
-  // Re-initialize Swiper when the window is resized
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 768) {
-      if (typeof swiper !== 'undefined') {
-        swiper.destroy(true, true);
-      }
+        if (!swiper) {
+            // Initialize swiper only if it's not already initialized
+            swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1.6, // Adjust the value to control how much of the next/previous card is visible
+                spaceBetween: 0, // Space between the cards
+                centeredSlides: true, // Center the active slide
+                autoplay: {
+                    delay: 3000, // 3 seconds delay for each card
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+            // Stop autoplay on interaction and restart after a short delay
+            swiper.on('touchStart', function () {
+                swiper.autoplay.stop();
+            });
+
+            swiper.on('touchEnd', function () {
+                setTimeout(() => {
+                    swiper.autoplay.start();
+                }, 3000); // Restart autoplay after 3 seconds of inactivity
+            });
+        }
     } else {
-      initSwiper();
+        // Destroy swiper if it exists and the window is resized to greater than 768px
+        if (swiper) {
+            swiper.destroy(true, true);
+            swiper = undefined; // Reset swiper variable after destroying
+        }
     }
-  });
-// end swipper
+}
+
+// Initialize Swiper on page load if screen width is <= 768px
+initSwiper();
+
+// Re-initialize Swiper when the window is resized
+window.addEventListener('resize', function () {
+    initSwiper(); // Re-initialize based on the new window size
+});
